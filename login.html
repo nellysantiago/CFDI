@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="CSS/estiloslogin.css" />
+  </head>
+  <body id="body-reg">
+    <header>
+      <nav>
+        <section class="contenedor nav">
+          <div class="logo-header">
+            <img src="Media/logo.png" alt="" />
+          </div>
+          <div class="enlaces-header">
+            <a href="login.html">Ingresar</a>
+            <a href="index.html">Conocenos</a>
+            <a href="#">Contacto</a>
+            <a href="ayuda.html">Ayuda</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container_all">
+        <div class="back_box">
+          <div class="box_login">
+            <h3>¿Ya tienes Cuenta?</h3>
+            <p>Inicia Sesión para entrar al sistema</p>
+            <button id="login_btn">Iniciar Sesión</button>
+          </div>
+          <div class="box_register">
+            <h3>¿Aún no tienes cuenta?</h3>
+            <p>Registrate para acceder al sistema</p>
+            <button id="register_btn">Registrarse</button>
+          </div>
+        </div>
+        <!---Formularios, mira ya se poner comentarios xd -->
+        <div class="form_login_register" id="formularios">
+          <form action="login.php" class="form_login" id="form_login">
+            <h2>Iniciar Sesión</h2>
+
+            <input type="text" placeholder="Correo Electronico" name="correo" />
+            <input type="password" placeholder="Contraseña" name="password" />
+            <div class="msg_error" id="msg_error"></div>
+            <button type="submit" id="Ingresar">Ingresar</button>
+          </form>
+
+          <form
+            action="registro.php"
+            method="POST"
+            class="form_register"
+            id="form_login"
+          >
+            <h2>Registrase</h2>
+            <input type="text" placeholder="Nombre" name="nombre2" />
+            <input type="text" placeholder="Apellidos" name="apellidos2" />
+
+            <input
+              type="text"
+              placeholder="Correo Electronico"
+              name="correo2"
+            />
+            <input type="password" placeholder="Contraseña" name="password2" />
+
+            <div class="msg_error" id="msg_error"></div>
+            <button type="submit" id="Registrar">
+              Registrarse
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="Media/logo.png" alt="" />
+      <div class="about">
+        <h3>Acerca de</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+          perspiciatis?
+        </p>
+      </div>
+      <div class="iconos-footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2f8b305e3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif
+}
+
+body{
+    background-image: url(../Media/back3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 80px;
+        background: #006699;
+        border-bottom: 1px solid transparent;
+        box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.2);
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        transition: ease-in-out 0.5s;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        padding: 0 40px;
+    }
+    
+    .nav .logo-header{
+        height: 100px;
+    }
+    .nav .logo-header img{
+        height: 80%;
+        vertical-align: top;
+    }
+    
+    .enlaces-header{
+        font-weight: 300;
+        transition: ease-in-out 0.5s;
+    }
+    .nav .enlaces-header a{
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+
+}
+
+.container_all{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.back_box{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.3);
+}
+
+.back_box div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+.back_box div p, .back_box div button{
+    margin-top: 30px;
+}
+
+.back_box div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.back_box button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.back_box button:hover{
+    background: white;
+    color: #006699;
+}
+
+
+/*Formularios*/
+.form_login_register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.form_login_register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.form_login_register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #006699;
+}
+
+.form_login_register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.form_login_register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #006699;/*#46A2fd*/
+    color: white;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.form_login{
+    opacity: 1;
+    display: block;
+}
+
+.form_register{
+    display: none;
+}
+
+/*Error Texto*/
+.msg_error {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+.msg_error-activo{
+    display: block;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .back_box{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .back_box div{
+        margin: 0;
+        position: absolute;
+    }
+
+    .form_login_register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .form_login_register form{
+        position: relative;
+    }
+}

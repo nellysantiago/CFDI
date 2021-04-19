@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+  </head>
+  <body>
+    <!--- Creen sus archivos de CSS  igual les dejo la base y si necesitan iconos
+    los pueden sacar de https://fontawesome.com/icons?d=gallery&p=2 -->
+    <header>
+      <nav>
+        <section class="contenedor nav">
+          <div class="logo-header">
+            <img src="Media/logo.png" alt="" />
+          </div>
+          <div class="enlaces-header">
+            <a href="inicio.html">Inicio</a>
+            <a href="#">Generar Factura</a>
+            <a href="#">Registro</a>
+            <a href="">Clientes</a>
+            <a href="">Mi perfil</a>
+            <a href="">Ayuda</a>
+            <a href="">salir</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <h1>LLenado de facturas</h1>
+
+    <br />
+    <br />
+    <div style="text-align: left;">
+      <table style="margin: 0 auto;">
+        <tr>
+          <th width="130" height="50">Tipo de factura</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                style="
+                  width: 100px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </form>
+          </th>
+          <th width="130" height="50">Folio</th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="folio"
+                style="
+                  width: 100px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+
+        <tr>
+          <th width="110" height="50">Receptor</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                id="item1"
+                name="Item 1"
+                style="
+                  width: 200px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option value="1">Nombre</option>
+                <option value="2">Nombre 2</option>
+                <option value="3">Nombre 3</option>
+                <option value="4">Nombre 4</option>
+              </select>
+            </form>
+          </th>
+
+          <th width="110" height="50">Uso de factura</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                style="
+                  width: 150px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </form>
+          </th>
+        </tr>
+
+        <tr>
+          <th width="110" height="50">Regimen fiscal</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                style="
+                  width: 300px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </form>
+          </th>
+        </tr>
+        <tr>
+          <th width="130">Fecha y hora de expedicion</th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="folio"
+                style="
+                  width: 100px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+          <th width="130" height="50">C.P.</th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="folio"
+                style="
+                  width: 100px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+        <tr>
+          <th width="130" height="50">Moneda</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                style="
+                  width: 100px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option>MXN</option>
+                <option>USD</option>
+                <option>JPY</option>
+                <option>EUR</option>
+              </select>
+            </form>
+          </th>
+          <th width="130" height="50">Tipo de cambio</th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="folio"
+                style="
+                  width: 100px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+
+        <tr>
+          <th width="110" height="50">Metodo de pago</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                style="
+                  width: 200px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </form>
+          </th>
+
+          <th width="110" height="50">Forma de pago</th>
+          <th width="130" height="50">
+            <form action="">
+              <select
+                style="
+                  width: 150px;
+                  border: 1px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+                onchange="this.style.width=200"
+              >
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+              </select>
+            </form>
+          </th>
+        </tr>
+        <tr>
+          <th width="130" height="50">Condiciones de pago</th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="folio"
+                style="
+                  width: 300px;
+                  height: 50px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+
+        <tr>
+          <th></th>
+          <th></th>
+
+          <th>
+            <input
+              type="button"
+              name="Save"
+              value="Guardar"
+              style="
+                width: 100px;
+                border: 3px solid #04467e;
+                background-color: #ddffff;
+                color: #2d4167;
+                font-size: 14px;
+              "
+            />
+          </th>
+          <th>
+            <input
+              type="button"
+              name="next"
+              value="Siguiente"
+              style="
+                width: 200px;
+                border: 3px solid #04467e;
+                background-color: #259b9b;
+                color: #000000;
+                font-size: 14px;
+              "
+            />
+          </th>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <img src="Media/logo.png" alt="" />
+      <div class="about">
+        <h3>Acerca de</h3>
+        <p></p>
+      </div>
+      <div class="iconos-footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/2f8b305e3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

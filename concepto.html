@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+  </head>
+  <body>
+    <!--- Creen sus archivos de CSS  igual les dejo la base y si necesitan iconos
+    los pueden sacar de https://fontawesome.com/icons?d=gallery&p=2 -->
+    <header>
+      <nav>
+        <section class="contenedor nav">
+          <div class="logo-header">
+            <img src="Media/logo.png" alt="" />
+          </div>
+          <div class="enlaces-header">
+            <a href="inicio.html">Inicio</a>
+            <a href="#">Generar Factura</a>
+            <a href="#">Registro</a>
+            <a href="">Clientes</a>
+            <a href="">Mi perfil</a>
+            <a href="">Ayuda</a>
+            <a href="">salir</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    <h1>Concepto</h1>
+
+    <br />
+    <br />
+    <div style="text-align: left;">
+      <table style="margin: 0 auto;">
+        <tr>
+          <th colspan="2">
+            Clave de producto o servicio
+          </th>
+          <th width="100" height="50">
+            <form action="">
+              <input
+                type="text"
+                size="50"
+                name="CPOS"
+                style="
+                  width: 200px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+          <th width="130" height="50" style="text-align: right;">Cantidad</th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="cantidad"
+                style="
+                  width: 100px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+        <tr>
+          <th style="text-align: left;">
+            Unidad
+          </th>
+          <th>
+            <form action="">
+              <input
+                type="text"
+                size="40"
+                name="unidad"
+                style="
+                  width: 140px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+
+          <th width="130" height="50" style="text-align: right;">
+            Clave de unidad
+          </th>
+          <th colspan="2">
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="cantidad"
+                style="
+                  width: 230px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+        <tr>
+          <th width="130" height="50" colspan="2">
+            Numero de identificacion
+          </th>
+          <th colspan="3">
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="cantidad"
+                style="
+                  width: 430px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+
+        <tr>
+          <th width="130" height="50">
+            Descripcion
+          </th>
+          <th colspan="4">
+            <form action="">
+              <input
+                type="text"
+                size="20"
+                name="cantidad"
+                style="
+                  width: 570px;
+                  border: 2px solid #04467e;
+                  background-color: #ddffff;
+                  color: #2d4167;
+                  font-size: 14px;
+                "
+              />
+            </form>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <img src="Media/logo.png" alt="" />
+      <div class="about">
+        <h3>Acerca de</h3>
+        <p></p>
+      </div>
+      <div class="iconos-footer">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2f8b305e3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

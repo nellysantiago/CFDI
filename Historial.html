@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historials</title>
+   
+   
+    <script>
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+    </script>
+    <link rel="stylesheet" href="CSS/estilosHistorial.css" />
+  </head>
+  <!--- Pase tus estilos al archivo estilosclientes, chequealo -->
+  <body>
+    <header>
+      <nav>
+        <section class="contenedor nav">
+          <div class="logo-header">
+            <img src="Media/logo.png" alt="" />
+          </div>
+          <div class="enlaces-header">
+            <a href="inicio.html">Inicio</a>
+            <a href="#">Generar Factura</a>
+            <a href="#">Registro</a>
+            <a href="">Clientes</a>
+            <a href="">Mi perfil</a>
+            <a href="">Ayuda</a>
+            <a href="">salir</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <main>
+        <form action="/action_page.php">
+            <label for="birthday">Fecha:</label>
+            <input type="date" id="birthday" name="birthday">
+            <select class="combo">
+                <option value="Select">Receptor</option>
+                <option value="html">HTML 5</option>
+                <option value="css">CSS 3</option>
+            </select>
+            <select class="combo">
+                <option value="Select">Todo</option>
+                <option value="html">Completado</option>
+                <option value="css">Borrador</option> 
+            </select>
+            <div class="div3">
+                <button >
+                    Filtrar
+                </button>
+            </div>
+        </form>
+        <link rel="icon" type="image/png" href="Media/simbolo-de-herramienta-llena-de-filtro.png" />
+        <table style="width:80%">
+            <tr>
+              <th>Nombre de la Factura</th>
+              <th>Folio</th> 
+              <th>Fecha</th>
+              <th>Receptor</th>
+              <th>Pdf</th>
+              <th>XML</th>
+            </tr>
+            <tr>
+              <td>Una simple factura</td>
+              <td>51</td>
+              <td>10/20/5025</td>
+              <td>Juanito</td>
+              <td>No </td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Segunda Simple factura</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tercera Simple Factura</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+    </main>
+    <footer>
+      <img src="Media/logo.png" alt="" />
+      <div class="about">
+        <h3>Acerca de</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
+          perspiciatis?
+        </p>
+      </div>
+      <div class="iconos">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2f8b305e3e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
